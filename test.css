@@ -27,7 +27,7 @@ h4, p {
 	margin-bottom: 20px;
 	text-align: justify;
 	text-shadow: 3px 2px black;
-	/*clear: right;*/
+	clear: right;
 }
 
 img {
@@ -35,9 +35,18 @@ img {
 	margin: 10px;
 }
 
-.floating-box {
+.floating-box-left {
 	display: inline-block;
 	max-width: 1000 px;
+	max-height: 1500 px;
+	margin: 10px;
+	padding: 5px;
+	border: 3px solid tomato;
+}
+
+.floating-box-right {
+	display: inline-block;
+	max-width: 300 px;
 	max-height: 1500 px;
 	margin: 10px;
 	padding: 5px;
