@@ -1,0 +1,45 @@
+body {
+	background-color:#15131e;
+	background-image:url(Dunno1-01-002.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: cover;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+h1 {
+	color: tomato;
+}
+
+h2, a {
+	color: #E96227;
+}
+
+h3 {
+	color: #FFD8B0;
+	margin-left: 80px;
+}
+
+h4, p {
+	color: white;
+	max-width: 1000px;
+	margin: auto;
+	margin-bottom: 20px;
+	text-align: justify;
+	text-shadow: 3px 2px black;
+	/*clear: right;*/
+}
+
+img {
+	float: right;
+	margin: 10px;
+}
+
+.floating-box {
+	display: inline-block;
+	max-width: 1000 px;
+	max-height: 1500 px;
+	margin: 10px;
+	padding: 5px;
+	border: 3px solid tomato;
+}
