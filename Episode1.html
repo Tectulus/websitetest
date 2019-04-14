@@ -10,9 +10,17 @@
 
 <body>
 	<div class="mainColumn">
-		<div class="navActive">
+		<div class="navActive"><button onclick="w3_open()" class="button">
 		<img src="Button-01.png" class="button">
-	   </div>
+		</button>
+		</div>
+			<nav class="navigation" id="mySidebar" style="display:none">
+  <ul>
+    <li><a href="index.html"><span>Startseite</span></a></li>
+    <li><a href="behindthescenes.html"><span>Hinter den Kulissen</span></a></li>
+    <li><a href="Impressum"><span>Impressum</span></a></li>
+  </ul>
+</nav>
 		<a href=index.html class="toHome";><h1>Clara against Ignorance</h1></a>
 		<img src="Episode2.png" class="mainImg">
 		<div class="podPage">
@@ -20,5 +28,15 @@
 		<iframe width="90%" height="166" scrolling="no" frameborder="no" class="player" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/34019569&amp;color=0066cc"></iframe>
 		</div>
 	</div>
+	<script>
+function w3_open() {
+  if (document.getElementById("mySidebar").style.display == "none"){
+  document.getElementById("mySidebar").style.display = "block";
+  } else {
+	  document.getElementById("mySidebar").style.display = "none"
+  }
+}
+
+	</script>
 </body>
 </html>
