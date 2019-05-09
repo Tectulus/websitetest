@@ -11,6 +11,9 @@
 * {
 	box-sizing: border-box;
 }
+a:hover {
+	color: black
+}
 body {
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 	background-color:hsla(0,0%,15%,1.00);
@@ -20,6 +23,8 @@ nav {
 	width: 20%;
 	position: fixed;
 	top: 90px;
+	right: 0px;
+	z-index: 5000;
 }
 ul {
   list-style-type: none;
@@ -62,9 +67,23 @@ h2 {
 	font-size: 3em;
 	text-align: center;
 }
-.navActive {
+.h2img {
+	display: inline;
+	height: 30pt;
+	width: auto;
+}
+.pageLogo {
   margin: 12px 0 0 12px;
   float: left;
+	width: 84px;
+	}
+.pageLogo::after {
+  content: "";
+  clear: both;
+}
+.navActive {
+  margin: 12px 0 0 12px;
+  float: right;
 	width: 84px;
 	}
 .player {
@@ -77,6 +96,7 @@ h2 {
 	width: 50%;
 	margin-bottom: 3em;
 	float: left;
+	z-index: 0
 }
 div.podPage {
 	float: left;
@@ -125,7 +145,7 @@ img.firstImage {
   border-radius: 4px;
 	transition: .5s ease;
 	cursor: pointer;
-	-webkit-filter: grayscale(100%);filter: grayscale(100%)
+	-webkit-filter: grayscale(100%);filter: grayscale(100%);
 }
 img.standardImage {
 	display: block;
@@ -139,6 +159,19 @@ img.standardImage {
   border-radius: 4px;
 	transition: .5s ease;
 	cursor: pointer;
+	-webkit-filter: grayscale(100%);filter: grayscale(100%);
+}
+img.standardImagecomingsoon {
+	display: block;
+	float: left;
+	height: 292px;
+	width: 292px;
+	display: block;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  border-radius: 4px;
+	transition: .5s ease;
 	-webkit-filter: grayscale(100%);filter: grayscale(100%)
 }
 .firstImage:hover {
