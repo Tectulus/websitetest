@@ -22,24 +22,20 @@
   <ul>
     <li><a href="index.html"><span>Startseite</span></a></li>
     <li><a href="behindthescenes.html"><span>Hinter den Kulissen</span></a></li>
-    <li><a href="https://www.htwk-leipzig.de/hochschule/kontakt/datenschutzerklaerung/" target="_blank"><span>Impressum/Datenschutz</span></a></li>
+    <li><a href="Impressum.html"><span>Impressum/Datenschutz</span></a></li>
   </ul>
 </nav>
 		<h1>Clara against Ignorance</h1>
-		<h2>Ein studentisches Projekt der <a href="https://www.htwk-leipzig.de/startseite/"><img class="h2img" src="htwk_logo03-700x467.png" alt="HTWK Leipzig"></a><br> in Kooperation mit <a href="https://www.mdr.de/mdr-klassik/index.html"><img class="h2img" style="height:50pt;" src="klassik140_v-variantBig16x9_w-576_zc-915c23fa.png" alt="MDR Klassik"></a> </h2>
-		<p>Der Radiomoderator Jörg Pivalski wittert die Show seines Lebens, als plötzlich die wieder auferstandene Komponistin Clara Schumann vor ihm steht. Da hatte er noch nicht mit der modernen Clara von heute gerechnet.</p>
+		<iframe id="MyIframe" src="Episode1.html" width="75%" onload="resizeIframe(this)" style="float:left;margin-bottom: 10px"></iframe>
 <div class="pictureSpace">
-	<a href="Episode1.html">
-	<img src="Episode1preview.jpg" class="firstImage">
-	</a>
-	<a href="Episode2.html">
-	<img src="Episode2preview.jpg" class="standardImage">
-	</a>
-	<img src="coming_soon.png" class="standardImagecomingsoon">
-	<img src="coming_soon.png" class="standardImagecomingsoon">
-	<img src="coming_soon.png" class="standardImagecomingsoon">
+	<img src="Episode1preview.jpg" class="firstImage" role="button" onclick="pod_switch('Episode1.html')">
+	<img src="Episode2preview.jpg" class="standardImage" role="button" onclick="pod_switch('Episode2.html')">
 	</div>
-</div>
+
+	
+<footer>
+<p>Ein studentisches Projekt der <a href="https://www.htwk-leipzig.de/startseite/"><img class="h2img" src="htwk_logo03-700x467.png" alt="HTWK Leipzig"></a> in Kooperation mit <a href="https://www.mdr.de/mdr-klassik/index.html"><img class="h2img" style="height:20pt;" src="klassik140_v-variantBig16x9_w-576_zc-915c23fa.png" alt="MDR Klassik"></a> </p>
+</footer></div>
 	<script>
 function w3_open() {
   if (document.getElementById("mySidebar").style.display == "none"){
@@ -48,7 +44,17 @@ function w3_open() {
 	  document.getElementById("mySidebar").style.display = "none"
   }
 }
+function pod_switch(myLink) {
+	var el = document.getElementById("MyIframe");
+	el.src = myLink;
+}
 
+  function resizeIframe(iframe) {
+    if(iframe) {
+      iframe.height = '';
+      iframe.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    }   
+  }
 	</script>
 </body>
 </html>

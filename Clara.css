@@ -26,6 +26,11 @@ nav {
 	right: 0px;
 	z-index: 5000;
 }
+iframe {
+	display: block;
+	margin-left: 4%;
+	width: 75%;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -69,7 +74,7 @@ h2 {
 }
 .h2img {
 	display: inline;
-	height: 30pt;
+	height: 10pt;
 	width: auto;
 }
 .pageLogo {
@@ -290,6 +295,11 @@ body {
     /* Change this value to customize the content area*/
     margin: 0 auto;
 }
+iframe {
+	display: block;
+	margin-left: 12.5%;
+	width: 75%;
+}
 p {
 	text-align: justify;
 	margin: 0 5em 2em 5em;
@@ -365,6 +375,11 @@ body {
     width: auto;
     /* Change this value to customize the content area*/
     margin: 0 auto;
+}
+	iframe {
+	display: block;
+	margin-left: 12.5%;
+	width: 75%;
 }
 p {
 	text-align: justify;
